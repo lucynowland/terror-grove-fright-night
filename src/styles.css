@@ -1,7 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Bahianita&family=Protest+Revolution&display=swap");
 
-h1 {
-  font-family: "Protest Revolution", sans-serif;
-  font-size: 96px;
-  line-height: 144px;
+:root {
+  --heading-font: "Protest Revolution", sans-serif;
+  --content-font: "Bahianita", sans-serif;
+}
+
+body {
+  background-color: #252525;
+}
+
+.hero-container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/hero-bg-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ff0000;
+  padding: 120px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  font-size: 64px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h2 {
+  font-family: var(--content-font);
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+header h3 {
+  color: #af0404;
+  font-family: var(--heading-font);
+  font-size: 26px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+header a {
+  background-color: #414141;
+  border-radius: 2px;
+  color: #af0404;
+  display: inline-block;
+  font-family: var(--content-font);
+  font-size: 26px;
+  padding: 9px 14px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin-top: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 32px;
+    line-height: 2;
+  }
+
+  header h2 {
+    font-size: 20px;
+    padding: 0 25px;
+  }
+
+  header h3 {
+    font-size: 13px;
+    padding: 0 8px;
+  }
+
+  header a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
 }
