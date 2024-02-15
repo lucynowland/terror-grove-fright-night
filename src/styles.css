@@ -18,8 +18,36 @@ main {
   background-color: #414141;
 }
 
-img {
+.btn {
+  background-color: #af0404;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  font-family: var(--content-font);
+  font-size: 21px;
+  line-height: 2;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3%;
+  max-width: 75%;
+  margin-top: 15px;
+}
+
+.about-img {
+  max-width: 550px;
   border-radius: 2px;
+}
+
+.card-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+img-responsive {
+  display: block;
   width: 100%;
 }
 
@@ -37,6 +65,10 @@ section {
 .grid-two-columns {
   grid-template-columns: 1fr 1fr;
   grid-gap: 65px;
+}
+
+.grid-three-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-three-columns-first-narrow {
@@ -116,6 +148,40 @@ main p {
   letter-spacing: 1px;
   line-height: 1.5;
   margin: 0;
+}
+
+.attractions-section {
+  max-width: 100%;
+  background-color: #252525;
+}
+
+.attractions-section h2,
+.attractions-section h3 {
+  text-align: center;
+}
+
+.card {
+  background-color: #414141;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card h3 {
+  color: #ff0000;
+  font-family: var(--heading-font);
+  font-size: 22px;
+  line-height: 2;
+}
+
+.card h5 {
+  color: #ff0000;
+  font-family: var(--heading-font);
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 footer {
