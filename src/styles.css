@@ -11,18 +11,36 @@ body {
 
 .hero-container {
   margin: 0 auto;
-  max-width: 75%;
+  max-width: 1400px;
+}
+
+main {
+  background-color: #414141;
+}
+
+img {
+  border-radius: 2px;
+  width: 100%;
 }
 
 section {
   margin: 0 auto;
   max-width: 75%;
+  padding: 80px 0;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr;
   grid-gap: 20px;
+}
+
+.grid-two-columns {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 65px;
+}
+
+.grid-three-columns-first-narrow {
+  grid-template-columns: 1fr 3fr 3fr;
 }
 
 header {
@@ -32,7 +50,7 @@ header {
   background-size: cover;
   background-position: center;
   color: #ff0000;
-  padding: 120px;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -75,6 +93,31 @@ header a {
   text-transform: uppercase;
 }
 
+main h3 {
+  color: #af0404;
+  font-family: var(--heading-font);
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+main h2 {
+  color: #ff0000;
+  font-family: var(--heading-font);
+  font-size: 28px;
+  line-height: 2;
+  margin: 0;
+}
+
+main p {
+  color: black;
+  font-family: var(--content-font);
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(37, 37, 37, 0.75),
@@ -84,7 +127,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h4 {
@@ -126,26 +168,35 @@ footer p {
 
 @media (max-width: 960px) {
   header {
-    padding: 60px 0;
+    padding: 80px 0;
   }
 
   header h1 {
-    font-size: 32px;
+    font-size: 40px;
     line-height: 2;
   }
 
   header h2 {
-    font-size: 20px;
+    font-size: 24px;
     padding: 0 25px;
   }
 
   header h3 {
-    font-size: 13px;
+    font-size: 20px;
     padding: 0 8px;
   }
 
   header a {
-    font-size: 13px;
+    font-size: 18px;
     padding: 5px 8px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+  }
+
+  .grid-two-columns {
+    grid-gap: 30px;
   }
 }
